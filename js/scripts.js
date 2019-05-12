@@ -66,3 +66,16 @@ $(document).ready(function(){
       $("#player" + players[currentPlayerIndex].playerNumber + "Box").addClass("well2");
       turnTotal = 0;
       }
+      $("#turnTotal").text(turnTotal);
+
+      });
+
+
+$("button#hold").click(function(){
+players[currentPlayerIndex].scorePoints(turnTotal);
+$("#player" + players[currentPlayerIndex].playerNumber + "Total").text(players[currentPlayerIndex].score);
+if (players[currentPlayerIndex].score > 99) {
+$("#gameEnd").show();
+} else {
+$("#dieRoll, #turnTotal").empty();
+}
