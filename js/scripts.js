@@ -90,3 +90,11 @@ $("button#reset").click(function(){
 players.forEach(function(player){
 player.resetScore();
 });
+
+turnTotal = 0;
+$("#player" + players[currentPlayerIndex].playerNumber + "Box").removeClass("well2")
+currentPlayerIndex = 0;
+$("#player" + players[currentPlayerIndex].playerNumber + "Box").addClass("well2");
+$("#dieRoll, #turnTotal, #player1Total, #player2Total").empty();
+  });
+});
