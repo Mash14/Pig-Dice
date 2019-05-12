@@ -21,3 +21,32 @@ function switchPlayer(currentPlayerNumber, numberOfPlayers) {
   }
   return nextPlayer;
 }
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+function rollD6() {
+  var roll = getRandomInt(1, 6);
+  return roll;
+}
+
+/* Front End */
+function showDie(roll) {
+  //Show image for current roll
+  // $("#dieRoll").html("<img src='img/" +roll+ ".png' />");
+};
+$(document).ready(function(){
+  var player1 = new Player(prompt("Player 1 enter your name: "), 1, 0);
+  var player2 = new Player(prompt("Player 2 enter your name: "), 2, 0);
+
+  $("#player1Name").text(player1.playerName);
+  $("#player2Name").text(player2.playerName);
+    var players = [player1, player2];
+
+    var numberOfPlayers = 2;
+
+    var playerTotal1 = 0;
+    var playerTotal2 = 0;
+
+    var currentPlayerIndex = 0;
+    var turnTotal = 0;
+    
