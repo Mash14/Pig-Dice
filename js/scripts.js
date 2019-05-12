@@ -85,3 +85,8 @@ $("#player" + players[currentPlayerIndex].playerNumber + "Box").removeClass("wel
 $("#player" + players[currentPlayerIndex].playerNumber + "Box").addClass("well2");
 turnTotal = 0;
 });
+
+$("button#reset").click(function(){
+players.forEach(function(player){
+player.resetScore();
+});
