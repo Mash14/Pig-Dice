@@ -79,3 +79,9 @@ $("#gameEnd").show();
 } else {
 $("#dieRoll, #turnTotal").empty();
 }
+
+$("#player" + players[currentPlayerIndex].playerNumber + "Box").removeClass("well2")
+    currentPlayerIndex = switchPlayer(currentPlayerIndex, numberOfPlayers);
+$("#player" + players[currentPlayerIndex].playerNumber + "Box").addClass("well2");
+turnTotal = 0;
+});
