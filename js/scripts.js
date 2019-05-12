@@ -49,4 +49,20 @@ $(document).ready(function(){
 
     var currentPlayerIndex = 0;
     var turnTotal = 0;
-    
+
+    $("#player" + players[currentPlayerIndex].playerNumber + "Box").addClass("well2");
+    $("button#roll").click(function()
+  var dieRoll = rollD6()
+  $("#dieRoll").text(dieRoll);
+  showDie(dieRoll);
+
+  if (dieRoll != 1) {
+   turnTotal += dieRoll;
+    } else {
+      $("#player" + players[currentPlayerIndex].playerNumber + "Total").text(players[currentPlayerIndex].score);
+      $("#player" + players[currentPlayerIndex].playerNumber + "Box").removeClass("well2")
+        currentPlayerIndex = switchPlayer(currentPlayerIndex, numberOfPlayers);
+      $("#activePlayer").text(players[currentPlayerIndex].playerName);
+      $("#player" + players[currentPlayerIndex].playerNumber + "Box").addClass("well2");
+      turnTotal = 0;
+      }
