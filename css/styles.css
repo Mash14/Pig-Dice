@@ -11,3 +11,19 @@ body {
 h3 {
   color: blue;
 }
+
+.but {
+  color: white;
+}
+
+#roll {
+  color: white;
+}
+
+#hold {
+  color: white;
+}
+
+#reset {
+  color: white;
+}
