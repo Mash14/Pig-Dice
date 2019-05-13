@@ -2,14 +2,12 @@ h1 {
   text-align: center;
   color: red;
 }
-.dice {
-  display: inline-block;
-  text-align: center;
-}
+
 body {
   background-image: url(https://3.bp.blogspot.com/-FTnReG6zcNI/XGVtmsMqDZI/AAAAAAAAFxU/GNEkWr3lCboQ2VXydpYXTK6HtxhpRt60ACHMYCw/s1600/dice-wallpaper-and-background-image-1280x800-id295966.jpg);
   text-align: center;
 }
-img {
-  width: 85%;
+
+h3 {
+  color: blue;
 }

@@ -51,7 +51,7 @@ $(document).ready(function(){
     var turnTotal = 0;
 
     $("#player" + players[currentPlayerIndex].playerNumber + "Box").addClass("well2");
-    $("button#roll").click(function()
+    $("button#roll").click(function() {
   var dieRoll = rollD6()
   $("#dieRoll").text(dieRoll);
   showDie(dieRoll);
